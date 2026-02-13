@@ -5,20 +5,20 @@
 class Dottie < Formula
   desc "A dotfiles manager for macOS and Linux"
   homepage "https://github.com/clutchski/dottie"
-  version "0.1.9-beta.1"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/clutchski/dottie/releases/download/v0.1.9-beta.1/dottie_0.1.9-beta.1_darwin_amd64.tar.gz"
-      sha256 "f71b8f0091c30b86620d1f5f692324fafe740e6abd2fe74503383da16fb3dc1e"
+      url "https://github.com/clutchski/dottie/releases/download/v0.2.0/dottie_0.2.0_darwin_amd64.tar.gz"
+      sha256 "c6a2e88aba49ea0fa724a2323c5c56f19583b6d28bf4aa6155b413ef453e407c"
 
       def install
         bin.install "dottie"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/clutchski/dottie/releases/download/v0.1.9-beta.1/dottie_0.1.9-beta.1_darwin_arm64.tar.gz"
-      sha256 "e47c0ebe76f1651f42e492c0050149757a017901ff0bf5c5117e098cbc1615a8"
+      url "https://github.com/clutchski/dottie/releases/download/v0.2.0/dottie_0.2.0_darwin_arm64.tar.gz"
+      sha256 "77d234f14adc7303943ea94db370c661ab055b0ab9b2574c8d1481096a0d9a8c"
 
       def install
         bin.install "dottie"
@@ -28,15 +28,15 @@ class Dottie < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/clutchski/dottie/releases/download/v0.1.9-beta.1/dottie_0.1.9-beta.1_linux_amd64.tar.gz"
-      sha256 "2f4cf0097e82955bcf126f691eaf50bd358dd936ecc65a6881b54b05826b545a"
+      url "https://github.com/clutchski/dottie/releases/download/v0.2.0/dottie_0.2.0_linux_amd64.tar.gz"
+      sha256 "4a8e58ff5ea9a08543c2519d912ffcb5fc7898749c5e579b986f5bc39d22ce31"
       def install
         bin.install "dottie"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/clutchski/dottie/releases/download/v0.1.9-beta.1/dottie_0.1.9-beta.1_linux_arm64.tar.gz"
-      sha256 "116ef33bb572f7e7deecc5fed819523570cb422bc3a917ea1090a1c46ae76054"
+      url "https://github.com/clutchski/dottie/releases/download/v0.2.0/dottie_0.2.0_linux_arm64.tar.gz"
+      sha256 "a020ad89b4c41a7dcc73cf1e06eebe771df078c0172fd2ed0770392c8bf17683"
       def install
         bin.install "dottie"
       end
